@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Px Grotesk';
+    src: url('../assets/Px-Grotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Px Grotesk';
+    src: url('../assets/Px-Grotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1, h4 {
+    font-family: 'Px Grotesk';
+    margin: 0;
+}
+
+h2,h3,h5,h6,p,a,ul {
+    /* font-family: "Inclusive Sans", sans-serif; */
+    font-family: "Inter", sans-serif;
+    margin:0;
+}
+
+h3 {
+    color:var(--brief-colour);
+    font-size: 0.8675rem;
+}
+
+h5 {
+    font-style: oblique;
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    font-weight: 300;
+}
+
+.brief-colour {
+    color:var(--brief-colour);
+}
+
+ul {
+    font-size: 0.8rem;;
+}

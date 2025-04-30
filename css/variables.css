@@ -1,0 +1,11 @@
+:root {
+    /* Colour */
+    --brief-colour: rgb(232,76,39);
+    --brief-colour--tint: color-mix(in srgb, var(--brief-colour) 15%, white);
+
+    /* Spacing */
+    --section-space:1rem;
+
+    --space-sm:4px;
+    --space-med:8px;
+}

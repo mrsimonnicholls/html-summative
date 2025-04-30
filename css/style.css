@@ -1,0 +1,109 @@
+@import url(typography.css);
+@import url(variables.css);
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer,
+section {
+    margin-bottom: var(--section-space);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: var(--section-space);
+}
+
+header>*:nth-child(-n+2) {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+header>*:nth-child(odd) {
+    align-content: center;
+    justify-self: start;
+}
+
+header>*:nth-child(even) {
+    justify-self: end;
+}
+
+
+#mdslogo {
+    height: 80px;
+}
+
+.logoicon {
+    fill: var(--brief-colour);
+}
+
+#task {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-space);
+
+    p {
+        padding: var(--space-sm);
+    }
+
+    p:first-of-type {
+        font-size: 1.2;
+    }
+}
+
+#timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: var(--section-space);
+    padding: var(--space-sm);
+
+    h2 {
+        grid-column: 1/-1;
+    }
+}
+
+.timeline-event {
+    border: solid 2px var(--brief-colour);
+    padding: 0.5rem;
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+#requirements {
+    background-color: var(--brief-colour--tint);
+
+    h2 {
+        background-color: var(--brief-colour);
+        color: white;
+        padding: var(--space-sm);
+        grid-column: 1 / -1;
+        column-span: all;
+        font-size: 1.4rem;
+    }
+}
+
+.requirement {
+    padding: var(--space-med);
+}
+
+@media screen and (width>900px) {
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin-inline: auto;
+    }
+
+    #requirements {
+        column-count: 2;
+        column-gap: 1rem;
+    }
+
+}
